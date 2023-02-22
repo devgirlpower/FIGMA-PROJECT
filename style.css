@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(226, 222, 222);
+    background-color: gray;
 
 }
 
@@ -31,4 +31,29 @@ body{
     height: 300px;
     width: 1200px;
 }
+
+#lateral{
+    
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 250px;
+    border: solid 1px black;
+    justify-content: baseline;
+    align-content: baseline;
+    align-items: baseline;
+  }
+
+  #lateralultra{
+    display: flex;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+
+  .itemultra {
+    margin: 10px;
+  }
 
