@@ -5,10 +5,18 @@ body{
 
 }
 
+#principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 #navegacao{
     background-color: rgb(242, 242, 242);
-    margin: 3px 0px 30px 240px;
+    margin: 3px 0px 30px 3px;
+    border: 1px solid red;
+    width: 1375px;
     
 }
 
@@ -30,8 +38,7 @@ body{
     padding-top: 10px;
     padding-bottom: 15px;
     width: 1375px;
-    margin-left: 240px;
-     /* margin: 0 auto; CENTRALIZAR DIV  */
+      /* margin: 0 auto; CENTRALIZAR DIV  */
 }
 
 #label1{
@@ -43,9 +50,9 @@ body{
 #tabela1{
     margin-top: 20px;
     text-align: center;
-    width: 1110px;
-    justify-content: center;
-    padding-left: 240px;
+    width: 1375px;
+    /* justify-content: center; */
+
     
     
 }
@@ -63,7 +70,7 @@ body{
     border-radius: 10px;
     flex-direction: column;
     float: left;
-    margin: 20px 20px 20px 240px;
+    margin: 20px 20px 20px 20px;
     padding-left: 10px;
   }
 
@@ -133,4 +140,8 @@ body{
     background-color: white;
     text-align: left;
     cursor: pointer;
+  }
+
+  #conteudo {
+    
   }
