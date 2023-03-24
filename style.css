@@ -10,14 +10,14 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 #navegacao{
     background-color: rgb(242, 242, 242);
     margin: 3px 0px 30px 3px;
     border: 1px solid red;
-    width: 1375px;
-    
+    width: 74%; /*1375px*/    
 }
 
  #navegacao a {
@@ -37,7 +37,7 @@ body{
     padding-left: 2px;
     padding-top: 10px;
     padding-bottom: 15px;
-    width: 1375px;
+    width: 74%; /*1375px*/
       /* margin: 0 auto; CENTRALIZAR DIV  */
 }
 
@@ -50,7 +50,8 @@ body{
 #tabela1{
     margin-top: 20px;
     text-align: center;
-    width: 1375px;
+    width: 74%; /*1375px*/
+    /* min-width: 650px; */
     /* justify-content: center; */
 
     
@@ -58,7 +59,8 @@ body{
 }
 #imagem1{
     height: 300px;
-    width: 1375px;
+    width: 100%; /*1375px*/
+    text-align: center;
     
     
     
@@ -84,11 +86,12 @@ body{
 .vendas {
     float: left;
     border: 1px solid red;
-    width: 1075px;
+    width: 76%; /*1075px*/
+    min-width: 408px;
     height: 1000px;
     padding-top: 10px;
     padding-bottom: 15px;
-    margin: 20px;
+    margin: 5px 0px 20px 0px;
 }
 
 .filtrovenda {
@@ -113,6 +116,8 @@ body{
 #barravenda {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .itemvenda {
@@ -120,6 +125,7 @@ body{
     border: 1px solid black;
     width: 228px;
     height: 422px;
+    /* min-width: 200px; */
     
 
   }
@@ -144,5 +150,24 @@ body{
   }
 
   #conteudo {
-    
+    border: solid 1px red;
+    width: 75%; /*1375px*/
+    padding: 0px;
+    min-width: 408px;
   }
+
+
+  /* PARA IPAD AIR */
+  @media screen and (max-width: 820px) {
+    .itemvenda {
+      width: 200px;
+      height: 400px;
+    }}
+
+      /* PARA SAMSUNG S20ultra */
+@media screen and (max-width: 412px) {
+	.itemvenda {
+		width: 180px;
+    height: 400px;
+	}}
+
