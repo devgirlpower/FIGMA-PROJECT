@@ -144,8 +144,21 @@ body{
     margin: 10px;
     border: 1px solid black;
     width: 228px;
-    height: 422px;
+    height: 400px;
     /* min-width: 200px; */
+    background: url(produtoum.png) no-repeat top center;
+    
+
+  }
+
+  .itemvenda:hover {
+    margin: 10px;
+    border: 1px solid black;
+    width: 228px;
+    height: 400px;
+    /* min-width: 200px; */
+    background-position: bottom center;
+    /* transition-delay: 500ms;  SLOW*/ 
     
 
   }
