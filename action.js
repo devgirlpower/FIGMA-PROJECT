@@ -42,4 +42,6 @@ function Fecha(){
 //
 //  FINAL, DAS FUNÇÕES QUE COMPOEM A FUNÇÃO CLICK
 
+//testando git 
+
 
