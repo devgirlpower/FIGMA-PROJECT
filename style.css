@@ -1,6 +1,7 @@
 body{
     background-color: #F5F6F8;
     font: 13px foco, "Open Sans", sans-serif;
+  
     
 
 }
@@ -11,13 +12,15 @@ body{
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 
 #navegacao{
     background-color: rgb(242, 242, 242);
     margin: 3px 0px 30px 3px;
     border: 1px solid red;
-    width: 74%; /*1375px*/    
+    width: 74%; /*1375px*/   
+    
 }
 
  #navegacao a {
@@ -75,14 +78,31 @@ body{
     float: left;
     margin: 20px 20px 20px 20px;
     padding-left: 10px;
+    height: 300px;
+    border: solid red 1px;
   }
 
   .itemultra {
     margin: 10px;
-    padding-left: 10px;
+    padding-left: 0px;
+    border: solid red 1px;
+    height: 19px;
+    
+  }
+  .item {
+    margin: 10px;
+    padding-left: 0px;
+    height: 19px;
     
   }
 
+  .item2 {
+    margin: 10px;
+    padding-left: 0px;
+    border: solid red 1px;
+    height: 500px;
+    
+  }
 .vendas {
     float: left;
     border: 1px solid red;
@@ -141,12 +161,17 @@ body{
     text-align: center;
   }
 
-  .btn {
+  #btn {
     border: none;
-    width: 200px;
+    width: 250px;
     background-color: white;
     text-align: left;
     cursor: pointer;
+    background: url(images.png) right no-repeat;
+    color:rgb(20, 60, 141);
+    font-family: 'Foco';
+    font-style: normal;
+    font-weight: 800; 
   }
 
   #conteudo {
@@ -154,6 +179,7 @@ body{
     width: 75%; /*1375px*/
     padding: 0px;
     min-width: 408px;
+    
   }
 
 
@@ -170,4 +196,5 @@ body{
 		width: 180px;
     height: 400px;
 	}}
+
 
