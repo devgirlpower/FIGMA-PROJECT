@@ -12,6 +12,7 @@ body{
   justify-content: center;
   align-items: center;
   width: 100%;
+  border: solid 1px red;
   
 }
 
@@ -79,13 +80,13 @@ body{
     margin: 20px 20px 20px 20px;
     padding-left: 10px;
     height: 300px;
-    border: solid red 1px;
+    /* border: solid red 1px; */
   }
 
   .itemultra {
     margin: 10px;
     padding-left: 0px;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     height: 19px;
     
   }
@@ -99,16 +100,16 @@ body{
   .item2 {
     margin: 10px;
     padding-left: 0px;
-    border: solid red 1px;
+    /* border: solid red 1px; */
     height: 500px;
     
   }
 .vendas {
     float: left;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 76%; /*1075px*/
     min-width: 408px;
-    height: 1000px;
+    
     padding-top: 10px;
     padding-bottom: 15px;
     margin: 5px 0px 20px 0px;
@@ -125,6 +126,9 @@ body{
     padding: 7px 5px;
     letter-spacing: 2px;
     font: 15px foco bold #0f1453;
+    color: #143C8D;
+    font-weight: bold;
+    background: #FFF;
 }
 .filtrovenda option {
     background-color: white;
@@ -147,6 +151,8 @@ body{
     height: 400px;
     /* min-width: 200px; */
     background: url(produtoum.png) no-repeat top center;
+    background-position: top center;
+    transition: 1s;
     
 
   }
@@ -159,6 +165,7 @@ body{
     /* min-width: 200px; */
     background-position: bottom center;
     /* transition-delay: 500ms;  SLOW*/ 
+    transition: 1s;
     
 
   }
@@ -188,13 +195,12 @@ body{
   }
 
   #conteudo {
-    border: solid 1px red;
+    /* border: solid 1px red; */
     width: 75%; /*1375px*/
     padding: 0px;
     min-width: 408px;
     
   }
-
 
   /* PARA IPAD AIR */
   @media screen and (max-width: 820px) {

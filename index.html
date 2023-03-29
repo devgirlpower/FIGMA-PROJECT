@@ -29,20 +29,22 @@
                 <hr>
                 <p><button id="btn" class="positivo">GRUPO</button></p>
                 
-                <div id="infrator" class="item" >
-                    <input type="checkbox" id="filtro1" name="filtro1">
-                <label for="filtro1">Hora de trocar (23)</label>
-                </div>
+                <div class="menor" id="infrator">
+                    <div class="item" >
+                        <input type="checkbox" id="filtro1" name="filtro1">
+                        <label for="filtro1">Hora de trocar (23)</label>
+                    </div>
                 
-                <div class="itemultra" >
-                    <input type="checkbox" id="filtro2" name="filtro2">
-                <label for="filtro2">Hora do Banho (2)</label>
-                </div>
+                    <div class="itemultra" >
+                        <input type="checkbox" id="filtro2" name="filtro2">
+                        <label for="filtro2">Hora do Banho (2)</label>
+                    </div>
 
-                <div class="itemultra" >
-                    <input type="checkbox" id="filtro3" name="filtro3">
-                    <label for="filtro3">Hora do Pós Banho (23)</label>
+                    <div class="itemultra" >
+                        <input type="checkbox" id="filtro3" name="filtro3">
+                        <label for="filtro3">Hora do Pós Banho (23)</label>
 
+                    </div>
                 </div>
             
             </div>
@@ -50,10 +52,10 @@
             <div class="vendas"><h3>140 PRODUTOS</h3>
                 
                 <p class="filtrovenda" >Itens por página 
-                    <select>
-                        <option>16</option>
-                        <option>32</option>
-                        <option>48</option>
+                    <select id="Quantidade" onchange="Item()">
+                        <option value="option-um" selected>4</option>
+                        <option  value="option-dois">8</option>
+                        <option  value="option-tres">12</option>
                         <img _ngcontent-serverapp-c81>
                     </select>   Ordenar por 
                     <select>
@@ -66,10 +68,21 @@
                     </select></p>
                 
                 <div id="barravenda">
-                    <div class="itemvenda"></div>
-                    <div class="itemvenda"></div>
-                    <div class="itemvenda"></div>
-                    <div class="itemvenda"></div>
+                    <div id="um" class="itemvenda"></div>
+                    <div id="dois" class="itemvenda"></div>
+                    <div id="tres" class="itemvenda"></div>
+                    <div id="quatro" class="itemvenda"></div>
+                    <div id="cinco" class="itemvenda"></div>
+                    <div id="seis" class="itemvenda"></div>
+                    <div id="sete" class="itemvenda"></div>
+                    <div id="oito" class="itemvenda"></div>
+                    <div id="nove" class="itemvenda"></div>
+                    <div id="dez" class="itemvenda"></div>
+                    <div id="onze" class="itemvenda"></div>
+                    <div id="doze" class="itemvenda"></div>
+
+
+
                     
                 </div>
             
