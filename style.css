@@ -5,70 +5,138 @@ body{
     
 
 }
+/* INICIO,                 ESTA É A DIV PRINCIPAL, É NELA ONDE ESTÁ TODO O RESTO, LIKE A BODY, 
+      é onde entra o display flex e flex direction para que possa ser organizado as colunas principais, busca, loja etc
+*/
+/**/#principal {
+/**/  display: flex;
+/**/  flex-direction: column;
+/**/  justify-content: center;
+/**/  align-items: center;
+/**/  width: 100%;
+  /* border: solid 1px red; */
+/**/}
+/*
+/* FIM, ESTA É A DIV PRINCIPAL */
 
-#principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  border: solid 1px red;
-  
-}
 
-#navegacao{
-    background-color: rgb(242, 242, 242);
-    margin: 3px 0px 30px 3px;
-    border: 1px solid red;
-    width: 74%; /*1375px*/   
-    
-}
 
- #navegacao a {
-    color: rgb(124,131,165,1);
-    text-decoration: none;
-}
-#navegacao a:visited {
-    color: rgb(20, 60, 141);
-    text-decoration: none;
-}
-#div1 p {
-    color: rgb(124,131,165,1); /*COR DO PARAGRAFO EM TOM FRACO   */
-}
+/* INICIO,              ESTA É A BARRA DE NAVEGAÇÃO PRINCIPAL, ONDE APONTA EM QUAL PARTE DO SITE ESTÁ, 
+/**/        /*Panvel / Combine e Ganhe / Combine 3 produtos Loreal e ganhe o de menor valor
+/**/
+/**/#navegacao{
+/**/    background-color: rgb(242, 242, 242);
+/**/    margin: 3px 0px 30px 3px;
+    /* border: 1px solid red; */
+/**/    width: 74%; /*1375px*/   
+/**/    
+/**/}
+/**/
+/**/ #navegacao a {
+/**/    color: rgb(124,131,165,1);
+/**/    text-decoration: none;
+/**/}
+/**/#navegacao a:visited {
+/**/    color: rgb(20, 60, 141);
+/**/    text-decoration: none;
+/**/}
+/**/
+/* FIM,ESTA É A BARRA DE NAVEGAÇÃO PRINCIPAL*/
 
-#div1{
-    background-color: white;
-    padding-left: 2px;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    width: 74%; /*1375px*/
-      /* margin: 0 auto; CENTRALIZAR DIV  */
-}
 
-#label1{
-    border: 2px solid orange;
-    color: orange;
-    border-radius: 4px;
-    
-}
-#tabela1{
-    margin-top: 20px;
-    text-align: center;
-    width: 74%; /*1375px*/
-    /* min-width: 650px; */
-    /* justify-content: center; */
 
-    
-    
-}
-#imagem1{
-    height: 300px;
-    width: 100%; /*1375px*/
-    text-align: center;
-    
-    
-    
-}
+
+/* INICIO,              ESTE É O PRIMEIRO TEXTO,   TITULO, TEXTO E LABEL EM LARANJA 
+/**/                            /*LABEL*/
+/**/                      /*Aenean eu leo quam pellentesque ornare sem Lacinia*/
+/**/                      /*teste test teste test teste test teste test teste test teste test teste test teste test*/
+/**/
+/**/#div1 p {
+/**/    color: rgb(124,131,165,1); /*COR DO PARAGRAFO EM TOM FRACO   */
+/**/}
+/**/#div1{
+/**/    background-color: white;
+/**/    padding-left: 2px;
+/**/    padding-top: 10px;
+/**/    padding-bottom: 15px;
+/**/    width: 73%; /*1375px*/
+/**/}
+/**/#label1{
+/**/    border: 2px solid orange;
+/**/    color: orange;
+/**/    border-radius: 4px;   
+/**/}
+/* FIM,ESTE É O PRIMEIRO TEXTO,*/
+
+
+
+/* INICIO,              ESTE É A PRIMEIRA IMAGEM, FUTURO CARROSSEL
+*/
+/**/.slider{
+/**/    margin: 0 auto;
+/**/    width: 73%; /*1375px correto, da imagem 1920*/
+        height: 300px;
+        overflow: hidden;
+/**/   
+/**/}
+/**/.slides{
+/**/    height: 300px;
+/**/    width: 100%; /*1375px*/
+        display: flex;
+/**/    text-align: center;
+/**/    }
+
+    .slides input {
+      display: none;
+    }
+
+    .slide {
+       width: 100%;
+      position: relative;
+    }
+
+    .slide img {
+      width:  1375px;
+    }
+
+    .manual-navigation {
+      position: absolute;
+      width: 1375px;
+      margin-top: -40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .manual-btn {
+      border: 2px solid #FFF;
+      padding: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0,95s;
+      background-color: black;
+    }
+
+    .manual-btn:not(:Last-child){
+      margin-right: 40px;
+    }
+    .manual-btn:hover{
+      background-color: #FFF;
+    }
+
+    #radio1:checked ~ .slide-primeiro{
+      margin-left: 0%;
+    }
+    #radio2:checked ~ .slide-primeiro{
+      margin-left: -140%;
+    }
+    #radio3:checked ~ .slide-primeiro{
+      margin-left: -240%;
+    }
+    #radio4:checked ~ .slide-primeiro{
+      margin-left: -341%;
+    }
+/* FIM,              ESTE É A PRIMEIRA IMAGEM,*/
+
 
   #lateralultra{
     display: flex;
@@ -79,8 +147,21 @@ body{
     float: left;
     margin: 20px 20px 20px 20px;
     padding-left: 10px;
-    height: 300px;
+    min-height: 330px;
     /* border: solid red 1px; */
+  }
+
+  #lateralultradois {
+    display: flex;
+    width: 245px;
+    border-radius: 10px;
+    float: left;
+    margin: 20px 20px 20px 20px;
+    padding-left: 10px;
+    height: 550px;
+    background: url(creme_loreal.jpg) no-repeat bottom center;
+    border: solid 1px red;
+    
   }
 
   .itemultra {
@@ -96,16 +177,48 @@ body{
     height: 19px;
     
   }
-
-  .item2 {
+  .menor{
+    margin: 10px;
+    padding-left: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+  .maior {
     margin: 10px;
     padding-left: 0px;
     /* border: solid red 1px; */
-    height: 500px;
+    height: 200px;
+    
+  }
+
+  .marcamenor{
+    margin: 10px;
+    padding-left: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+  .marcamaior {
+    margin: 10px;
+    padding-left: 0px;
+    /* border: solid red 1px; */
+    height: 200px;
+    
+  }
+  .tamanhomenor{
+    margin: 10px;
+    padding-left: 0px;
+    height: 0px;
+    overflow: hidden;
+  }
+  .tamanhomaior {
+    margin: 10px;
+    padding-left: 0px;
+    /* border: solid red 1px; */
+    height: 200px;
     
   }
 .vendas {
-    float: left;
+    float: right;
     /* border: 1px solid red; */
     width: 76%; /*1075px*/
     min-width: 408px;
@@ -193,6 +306,91 @@ body{
     font-style: normal;
     font-weight: 800; 
   }
+
+  #btndois {
+    border: none;
+    width: 250px;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+    background: url(images.png) right no-repeat;
+    color:rgb(20, 60, 141);
+    font-family: 'Foco';
+    font-style: normal;
+    font-weight: 800; 
+  }
+  #btntres {
+    border: none;
+    width: 250px;
+    background-color: white;
+    text-align: left;
+    cursor: pointer;
+    background: url(images.png) right no-repeat;
+    color:rgb(20, 60, 141);
+    font-family: 'Foco';
+    font-style: normal;
+    font-weight: 800; 
+  }
+  .positivo{
+    border: #0f1453;
+  }
+  .negativo{
+    border: #9aa339;
+  }
+  .positivodois{
+    border: #0f1453;
+  }
+  .negativodois{
+    border: #9aa339;
+  }
+  .positivotres{
+    border: #0f1453;
+  }
+  .negativotres{
+    border: #9aa339;
+  }
+
+  #paginas {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    margin: 5px 0px 20px 0px;
+    width: 76%;
+    height: 280px;
+  }
+  #pagina{
+    text-align: center;
+    margin: auto;
+    width: 400px;
+  }
+
+  #paginas ul {
+    display: flex;
+  }
+  #paginas li {
+    text-decoration: none;
+    list-style:none; 
+    border: solid 1px #143C8D;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+
+  }
+  #esquerda{
+    margin-top: 10px;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #direita{
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+  }
+  
 
   #conteudo {
     /* border: solid 1px red; */

@@ -17,35 +17,171 @@
         <h2>Aenean eu leo quam pellentesque ornare sem Lacinia</h2>
         <p>teste test teste test teste test teste test teste test teste test teste test teste test</p>
         </div>
+        
+        <!--SLIDER-->
+        <div class="slider">
+            <div class="slides"> 
+                <!--Radio Buttons-->
+                <input type="radio" nome="radio-btn" id="radio1" name="myGroup">
+                <input type="radio" nome="radio-btn" id="radio2" name="myGroup">
+                <input type="radio" nome="radio-btn" id="radio3" name="myGroup">
+                <input type="radio" nome="radio-btn" id="radio4" name="myGroup">
+                <!--Fim, Radio Buttons-->
 
-        <div id="tabela1">
-        <img id="imagem1" src="https://cdn1.staticpanvel.com.br/banners/banner_1362/slide_4544/infinita_1702.png" srcset="https://cdn1.staticpanvel.com.br/banners/banner_1362/slide_4544/infinita_1702.png">
+                <!--Inicio, Imagem-->
+                <div class="slide-primeiro" alt="Imagem 1">
+                    <img src="https://cdn1.staticpanvel.com.br/banners/banner_1362/slide_4544/infinita_1702.png">
+                </div>
+                <div class="slide" alt="Imagem 2">
+                    <img src="https://cdn1.staticpanvel.com.br/banners/banner_1366/slide_4955/nivea.jpg">
+                </div>
+                <div class="slide" alt="Imagem 3">
+                    <img src="https://cdn1.staticpanvel.com.br/banners/banner_1366/slide_4907/instantes_2401.png">
+                </div>
+                <div class="slide" alt="Imagem 4">
+                    <img src="https://cdn1.staticpanvel.com.br/banners/banner_1366/slide_5049/dermativ_2003.png">
+                </div>
+                <!--Fim, Imagem-->
+
+                <!--Navegation auto-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!--Fim, Navegation auto-->
+            </div>
+
+            <!--Navegation manual-->
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!--Fim, Navegation manual-->
         </div>
+        <!--Fim, SLIDER-->
 
         <div id="conteudo">
             <div id="lateralultra">
             
                 <h3>REFINE SUA BUSCA</h3>
                 <hr>
+                <!--Inicio GRUPO-->
                 <p><button id="btn" class="positivo">GRUPO</button></p>
                 
-                <div class="menor" id="infrator">
+                <div class="maior" id="infrator">
                     <div class="item" >
-                        <input type="checkbox" id="filtro1" name="filtro1">
-                        <label for="filtro1">Hora de trocar (23)</label>
+                        <input type="checkbox" id="grupo1" name="grupo1">
+                        <label for="grupo1">Hora de trocar (23)</label>
                     </div>
                 
                     <div class="itemultra" >
-                        <input type="checkbox" id="filtro2" name="filtro2">
-                        <label for="filtro2">Hora do Banho (2)</label>
+                        <input type="checkbox" id="grupo2" name="grupo2">
+                        <label for="grupo2">Hora do Banho (2)</label>
                     </div>
 
                     <div class="itemultra" >
-                        <input type="checkbox" id="filtro3" name="filtro3">
-                        <label for="filtro3">Hora do Pós Banho (23)</label>
+                        <input type="checkbox" id="grupo3" name="grupo3">
+                        <label for="grupo3">Hora do Pós Banho (23)</label>
+                    </div>
+                    <div class="item" >
+                        <input type="checkbox" id="grupo4" name="grupo4">
+                        <label for="grupo4">Hora de trocar (23)</label>
+                    </div>
+                
+                    <div class="itemultra" >
+                        <input type="checkbox" id="grupo5" name="grupo5">
+                        <label for="grupo5">Momento da Mamãe (0)</label>
+                    </div>
+
+                    <div class="itemultra" >
+                        <input type="checkbox" id="grupo6" name="grupo6">
+                        <label for="grupo6">Hora de Se Arrumar (5)</label>
+                    </div>
+
+                    
+                </div>
+                <!--Fim GRUPO-->
+                <hr>
+                <!--Inicio Marca-->
+                <p><button id="btndois" class="positivodois">MARCA</button></p>
+                
+                <div class="marcamaior" id="marcaone">
+                    <div class="itemultra" >
+                        <input type="checkbox" id="marca1" name="marca1">
+                        <label for="marca1">Pampers (9)</label>
+                    </div>
+                
+                    <div class="itemultra" >
+                        <input type="checkbox" id="marca2" name="marca2">
+                        <label for="marca2">Huggies (1)</label>
+                    </div>
+
+                    <div class="itemultra" >
+                        <input type="checkbox" id="marca3" name="marca3">
+                        <label for="marca3">Turma da Mônica (0)</label>
+
+                    </div>
+                    <div class="itemultra" >
+                        <input type="checkbox" id="marca4" name="marca4">
+                        <label for="marca4">Babysec (0)</label>
+                    </div>
+                
+                    <div class="itemultra" >
+                        <input type="checkbox" id="marca5" name="marca5">
+                        <label for="marca5">Pompom (5)</label>
+                    </div>
+
+                    <div class="itemultra" >
+                        <input type="checkbox" id="marca6" name="marca6">
+                        <label for="marca6">Disney Baby (0)</label>
 
                     </div>
                 </div>
+                <!--Fim Marca-->
+
+
+                <!--Inicio Tamanho-->
+                <p><button id="btntres" class="positivotres">TAMANHO</button></p>
+                
+                <div class="tamanhomaior" id="tamanhoone">
+                    <div class="itemultra" >
+                        <input type="checkbox" id="tamanho1" name="tamanho1">
+                        <label for="tamanho1">XXG (1)</label>
+                    </div>
+                
+                    <div class="itemultra" >
+                        <input type="checkbox" id="tamanho2" name="tamanho2">
+                        <label for="tamanho2">XG (7)</label>
+                    </div>
+
+                    <div class="itemultra" >
+                        <input type="checkbox" id="tamanho3" name="tamanho3">
+                        <label for="tamanho3">G (9)</label>
+
+                    </div>
+                    <div class="itemultra" >
+                        <input type="checkbox" id="tamanho4" name="tamanho4">
+                        <label for="tamanho4">M (1)</label>
+                    </div>
+                
+                    <div class="itemultra" >
+                        <input type="checkbox" id="tamanho5" name="tamanho5">
+                        <label for="tamanho5">P (2)</label>
+                    </div>
+
+                    <div class="itemultra" >
+                        <input type="checkbox" id="tamanho6" name="tamanho6">
+                        <label for="tamanho6">PP (5)</label>
+
+                    </div>
+                </div>
+                <!--Fim Tamanho-->
+
+                
             
             </div>
 
@@ -87,6 +223,22 @@
                 </div>
             
             </div>
+
+            <!-- <div id="paginas">
+                <div id="pagina">    
+                    <ul>
+                        <img id="esquerda" src="esquerda.png">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>48</li>
+                        <img id="direita" src="direita.png">
+                    </ul>
+                </div>
+            </div> -->
+
+            <div id="lateralultradois"></div>
         </div>
     </div>
     <h3>Window size is <span class="window-size"></span></h3>
