@@ -129,6 +129,10 @@ var nove = document.querySelector('#nove');
 var dez = document.querySelector('#dez');
 var onze = document.querySelector('#onze');
 var doze = document.querySelector('#doze');
+var treze = document.querySelector('#treze');
+var catorze = document.querySelector('#catorze');
+var quinze = document.querySelector('#quinze');
+var dezeseis = document.querySelector('#dezeseis');
 var barra = document.querySelector('barravenda');
 
 function Item(){
@@ -139,15 +143,15 @@ function Item(){
   let text = optionValue.text;
   console.log(value, text);
 
-if(text==('4')) {   
+if(text==('8')) {   
 Remove();
-console.log('4');
-}else if(text==('8')){
-AdicionaUm();
 console.log('8');
 }else if(text==('12')){
-AdicionaDois();
+AdicionaUm();
 console.log('12');
+}else if(text==('16')){
+AdicionaDois();
+console.log('16');
 }}
 Item();
 
@@ -156,20 +160,6 @@ um.hidden=false
 dois.hidden=false
 tres.hidden=false
 quatro.hidden=false
-cinco.hidden=true
-seis.hidden=true
-sete.hidden=true
-oito.hidden=true
-nove.hidden=true
-dez.hidden=true
-onze.hidden=true
-doze.hidden=true
-}
-function AdicionaUm(){
-um.hidden=false
-dois.hidden=false
-tres.hidden=false
-quatro.hidden=false
 cinco.hidden=false
 seis.hidden=false
 sete.hidden=false
@@ -178,21 +168,47 @@ nove.hidden=true
 dez.hidden=true
 onze.hidden=true
 doze.hidden=true
+treze.hidden=true
+catorze.hidden=true
+quinze.hidden=true
+dezeseis.hidden=true
+}
+function AdicionaUm(){
+  um.hidden=false
+  dois.hidden=false
+  tres.hidden=false
+  quatro.hidden=false
+  cinco.hidden=false
+  seis.hidden=false
+  sete.hidden=false
+  oito.hidden=false
+  nove.hidden=false
+  dez.hidden=false
+  onze.hidden=false
+  doze.hidden=false
+  treze.hidden=true
+  catorze.hidden=true
+  quinze.hidden=true
+  dezeseis.hidden=true
 }
 
 function AdicionaDois(){
-um.hidden=false
-dois.hidden=false
-tres.hidden=false
-quatro.hidden=false
-cinco.hidden=false
-seis.hidden=false
-sete.hidden=false
-oito.hidden=false
-nove.hidden=false
-dez.hidden=false
-onze.hidden=false
-doze.hidden=false
+  um.hidden=false
+  dois.hidden=false
+  tres.hidden=false
+  quatro.hidden=false
+  cinco.hidden=false
+  seis.hidden=false
+  sete.hidden=false
+  oito.hidden=false
+  nove.hidden=false
+  dez.hidden=false
+  onze.hidden=false
+  doze.hidden=false
+  treze.hidden=false
+  catorze.hidden=false
+  quinze.hidden=false
+  dezeseis.hidden=false
 }
 // FIM, FUNÇÃO PARA REMOVER OU ADICIONAR ITENS 
 
