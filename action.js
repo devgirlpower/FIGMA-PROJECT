@@ -13,6 +13,7 @@ function sizeOfThings(){
 sizeOfThings();
 
 
+
 var btn = document.querySelector("#btn");
 var infrator = document.querySelector("#infrator");
 var menor = document.querySelector(".menor");
@@ -109,10 +110,38 @@ tamanhoone.classList.add('tamanhomenor')
 }
 // FIM, FUNÇÃO CLICK PARA ALTERAR O TAMANHO DO ITEM DE BUSCA   // MARCA
 
+// INICIO, FUNÇÃO CLICK PARA ALTERAR O ESTRELA DO ITEM DE BUSCA   // MARCA
+var estrelaone = document.querySelector('#estrelaone');
+var btnquatro = document.querySelector("#btnquatro");
+var menorquatro = document.querySelector(".marcaquadro");
+var maiorquatro = document.querySelector(".marcaquadro");
+
+btnquatro.addEventListener("click", function(){
+  if(btnquatro.classList.contains('positivoquatro')) {    
+    Fechaquatro();
+  } else{
+    Abrequatro();
+  }
+})
+
+function Abrequatro(){
+btnquatro.classList.remove('negativoquatro')
+btnquatro.classList.add('positivoquatro')
+estrelaone.classList.remove('estrelamenor')
+estrelaone.classList.add('estrelamaior')
+}
+function Fechaquatro(){
+  btnquatro.classList.remove('positivoquatro')
+  btnquatro.classList.add('negativoquatro')
+  estrelaone.classList.remove('estrelamaior')
+  estrelaone.classList.add('estrelamenor')
+}
+// FIM, FUNÇÃO CLICK PARA ALTERAR O ESTRELA DO ITEM DE BUSCA   // MARCA
 
 
 
-//  FINAL, DAS FUNÇÕES QUE COMPOEM A FUNÇÃO CLICK
+
+//  FINAL, DAS FUNÇÕES QUE COMPOEM A FUNÇÃO CLICK\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 // INICIO, FUNÇÃO PARA REMOVER OU ADICIONAR ITENS 
@@ -133,6 +162,11 @@ var treze = document.querySelector('#treze');
 var catorze = document.querySelector('#catorze');
 var quinze = document.querySelector('#quinze');
 var dezeseis = document.querySelector('#dezeseis');
+var dezesete = document.querySelector('#dezesete');
+var dezoito = document.querySelector('#dezoito');
+var dezenove = document.querySelector('#dezenove');
+var vinte = document.querySelector('#vinte');
+
 var barra = document.querySelector('barravenda');
 
 function Item(){
@@ -143,15 +177,15 @@ function Item(){
   let text = optionValue.text;
   console.log(value, text);
 
-if(text==('8')) {   
+if(text==('12')) {   
 Remove();
-console.log('8');
-}else if(text==('12')){
-AdicionaUm();
 console.log('12');
 }else if(text==('16')){
-AdicionaDois();
+AdicionaUm();
 console.log('16');
+}else if(text==('20')){
+AdicionaDois();
+console.log('20');
 }}
 Item();
 
@@ -164,15 +198,20 @@ cinco.hidden=false
 seis.hidden=false
 sete.hidden=false
 oito.hidden=false
-nove.hidden=true
-dez.hidden=true
-onze.hidden=true
-doze.hidden=true
+nove.hidden=false
+dez.hidden=false
+onze.hidden=false
+doze.hidden=false
 treze.hidden=true
 catorze.hidden=true
 quinze.hidden=true
 dezeseis.hidden=true
+dezesete.hidden=true
+dezoito.hidden=true
+dezenove.hidden=true
+vinte .hidden=true
 }
+
 function AdicionaUm(){
   um.hidden=false
   dois.hidden=false
@@ -186,10 +225,14 @@ function AdicionaUm(){
   dez.hidden=false
   onze.hidden=false
   doze.hidden=false
-  treze.hidden=true
-  catorze.hidden=true
-  quinze.hidden=true
-  dezeseis.hidden=true
+  treze.hidden=false
+  catorze.hidden=false
+  quinze.hidden=false
+  dezeseis.hidden=false
+  dezesete.hidden=true
+  dezoito.hidden=true
+  dezenove.hidden=true
+  vinte .hidden=true
 }
 
 function AdicionaDois(){
@@ -209,6 +252,10 @@ function AdicionaDois(){
   catorze.hidden=false
   quinze.hidden=false
   dezeseis.hidden=false
+  dezesete.hidden=false 
+  dezoito.hidden=false
+  dezenove.hidden=false
+  vinte .hidden=false
 }
 // FIM, FUNÇÃO PARA REMOVER OU ADICIONAR ITENS 
 
@@ -232,6 +279,13 @@ function nextImage(){
   }
 
   document.getElementById('radio'+count).checked = true;
+  
 }
 // FIM, FUNÇÃO PARA CARROSEL AUTOMATICO
 
+var btnsna = document.querySelector('#btnsnakbar');
+
+
+btnsnakbar.addEventListener("click", function(){
+  document.getElementById('snakbar').style.display = 'none';
+  })
